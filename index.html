@@ -5,11 +5,111 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <h1>Photo</h1>
-    <img = src="img/photo.jpg" alt="Stich">
-
+    
 </head>
 <body>
+    <h1>Hello, HTML</h1> <!-- h1 - заголовок першого рівня -->
+    <h2>Stich Photos</h2> <!-- h1 - заголовок другого рівня -->
+    <img = src="img/photo.jpg" alt="Stich"> <!-- вставка картинки -->
     
+    <link href="/media/examples/link-element-example.css" rel="stylesheet"> <!-- лінк на зовнішній ресурс(найчастіше на CSS файл) -->
+    <h1></h1> <!-- заголовки різних рівнів (1-6) -->
+    <main></main> <!-- основний контент сторінки -->
+    <nav></nav> <!-- окрема секція документу для задання посилань навігації (меню, якірні посилання) -->
+    <section></section> <!-- окремий автономний розділ -->
+    <blockquote cite="https://www.huxley.net/bnw/four.html"> <!-- цитата (cite - посилання на джерело) -->
+        <p>Words can be like X-rays, if you use them properly—they’ll go through anything. You read and you’re pierced.</p>
+    </blockquote>
+    <div></div> <!-- контейнер для контенту -->
+    <dl> <!-- контейнер для термінів і їх описів -->
+        <dt>Beast of Bodmin</dt> <!-- термін -->
+        <dd>A large feline inhabiting Bodmin Moor.</dd> <!-- опис -->
+    </dl>
+    <figure> <!-- ілюстрація з необов'язковим підписом -->
+        <img src="/media/cc0-images/elephant-660-480.jpg"
+             alt="Elephant at sunset">
+        <figcaption>An elephant at sunset</figcaption> <!-- підпис ілюстрації -->
+    </figure>
+    <p>§1: The first rule of Fight Club is: You do not talk about Fight Club.</p> <!-- абзац -->
+    <hr> <!-- горизонтальна лінія для тематичного розділення абзаців -->
+    <p>§2: The second rule of Fight Club is: Always bring cupcakes.</p>
+    <ol> <!-- нумерований список -->
+        <li>Mix flour, baking powder, sugar, and salt.</li> <!-- елементи списку -->
+        <li>In another bowl, mix eggs, milk, and oil.</li>
+    </ol>
+    <ul> <!-- ненумерований список -->
+        <li>Mix flour, baking powder, sugar, and salt.</li> <!-- елементи списку -->
+        <li>In another bowl, mix eggs, milk, and oil.</li>
+    </ul>
+    <pre> <!-- попередньо відформатований текст, який потрібно відобразити точно так само як було задано -->
+        L          TE
+          A       A
+            C    V
+             R A
+             DOU
+             LOU
+            REUSE
+            QUE TU
+            PORTES
+          ET QUI T'
+          ORNE O CI
+           VILISÉ
+          OTE-  TU VEUX
+           LA    BIEN
+          SI      RESPI
+                  RER       - Apollinaire
+      </pre>
+      <a href="https://developer.mozilla.org">MDN</a> <!-- гіперпосилання на якесь місце на сторінці або на іншу сторінку -->
+      <abbr title="Cascading Style Sheets">CSS</abbr> <!-- абревіатура -->
+      <b>Жирний шрифт</b> <!-- жирний шрифт -->
+      <p> O’er all the hilltops<br>
+        Is quiet now,<br> <!-- перехід на новий рядок -->
+        In all the treetops
+    </p>
+    <audio
+        controls
+        src="/media/cc0-audio/t-rex-roar.mp3">
+            Your browser does not support the
+            <code>audio</code> element.
+    </audio> <!-- вставка аудіо-файла -->
+    <map name="infographic"> <!-- карта зображення -->
+        <area shape="poly" coords="130,147,200,107,254,219,130,228" 
+              href="https://developer.mozilla.org/docs/Web/HTML"
+              target="_blank" alt="HTML" /> <!-- визначає активну область на зображенні та пов'язує її з гіперпосиланням -->
+        <area shape="poly" coords="130,147,130,228,6,219,59,107"
+              href="https://developer.mozilla.org/docs/Web/CSS"
+              target="_blank" alt="CSS" />
+        <area shape="poly" coords="130,147,200,107,130,4,59,107"
+              href="https://developer.mozilla.org/docs/Web/JavaScript"
+              target="_blank" alt="JavaScript" />
+    </map>
+    <img usemap="#infographic" src="/media/examples/mdn-info2.png" alt="MDN infographic" />
+    <video src="videofile.ogg" autoplay poster="posterimage.jpg"> <!-- вставка відео-файла -->
+    </video>
+    <script type="text/javascript" src="javascript.js"></script> <!-- підключення js -->
+    <table> <!-- таблиця -->
+        <caption>Example Caption</caption> <!-- заголовок таблиці -->
+        <tr> <!-- рядок -->
+          <th>Login</th> <!-- колонка -->
+          <th>Email</th>
+        </tr>
+        <tr>
+          <td>user1</td>
+          <td>user1@sample.com</td>
+        </tr>
+    </table>
+    <form action="https://freecatphotoapp.com/submit-cat-photo"></form> <!-- форма для отримання даних -->
+    <fieldset> <!-- групує частини форми -->
+        <legend>Is your cat an indoor or outdoor cat?</legend> <!-- задає назву для  fieldset -->
+        <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label> <!-- input-поле введення -->
+        <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label> <!-- label -підпис для поля введення -->
+      </fieldset>
+     
+      <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+      <button type="submit">Submit</button> <!-- кнопка -->
+    </form>
+    
+    
+
 </body>
 </html>
